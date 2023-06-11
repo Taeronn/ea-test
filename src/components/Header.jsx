@@ -18,10 +18,7 @@ const Header = () => {
                 <Logo/>
             </div>
 
-            <div className="header-text">
-                <h1>Under Construction</h1>
-                <p>We're making lots of improvements and will be back soon</p>
-            </div>
+
         </div>
     );
 };

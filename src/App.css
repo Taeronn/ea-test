@@ -2,7 +2,137 @@
   margin: 0;
   padding: 0;
 }
+@media (min-width: 768px) {
 
+  .header-text p {
+    width: 25em;
+  }
+
+  #email {
+    font-size: 1.125em;
+  }
+
+  .timer-item-name.full {
+    display: flex;
+    background: url("./assets/timer-item-name.svg") center no-repeat;
+    background-size: contain;
+  }
+
+  .timer-item-name.short {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    margin-top: 7em;
+  }
+
+  #subscribe {
+    margin: 1.5em 0;
+  }
+
+  .vector-left {
+    transform: scale(0.8) translateX(-130px) translateY(-130px);
+  }
+
+  .vector-right {
+    transform: scale(0.9) translateX(30px) translateY(-30px);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .logo {
+    margin-top: 9em;
+  }
+
+  #email {
+    font-size: 0.875em;
+  }
+
+
+
+  .header-text h1 {
+    font-size: 2.25em;
+  }
+
+  .timer h1 {
+    font-size: 2.25em;
+  }
+
+  .timer-item-name {
+
+  }
+
+  .vector-left {
+    transform: scale(0.7) translateX(-150px) translateY(-150px);
+  }
+
+  .vector-right {
+    transform: scale(0.9) translateX(30px) translateY(-30px);;
+  }
+
+  .section-1-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .timer-item-name.full {
+    display: none;
+  }
+
+  .timer-item-name.short {
+    display: flex;
+    background: url("./assets/timer-item-name-short.svg") center no-repeat;
+    background-size: contain;
+    height: 4em;
+    width: 4em;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .header-text p {
+    width: 19em;
+  }
+
+
+
+  #email {
+    font-size: 0.875em;
+  }
+
+  .vector-left {
+    transform: scale(0.5) translateX(-290px) translateY(-250px);
+  }
+
+  .vector-right {
+    transform: scale(0.75) translateX(60px) translateY(-60px);;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .vector-left {
+    transform: scale(0.4) translateX(-360px) translateY(-360px);
+  }
+
+  .vector-right {
+    transform: scale(0.6) translateX(100px) translateY(-120px);;
+  }
+
+  .header-text p {
+    width: 17em;
+  }
+
+  .header-text h1 {
+    line-height: 100%;
+    width: 10em;
+    margin-bottom: 0.5em;
+  }
+}
 
 body{
   background-color: #ffffff;
@@ -30,12 +160,10 @@ a {
 .wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   position: relative;
-}
-
-.hide {
-  display: none;
 }
 
 h1{
@@ -49,10 +177,11 @@ h1{
   margin-bottom: 2em;
 }
 
+
 .header-text p {
-  width: 25em;
   margin: auto;
 }
+
 
 .vector-right {
   position: absolute;
@@ -73,8 +202,7 @@ h1{
 .section-1-main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .timer {
@@ -83,6 +211,7 @@ h1{
 }
 
 .timer h1 {
+  font-weight: 600;
   opacity: 1;
 }
 
@@ -93,16 +222,10 @@ h1{
 }
 
 .timer-item-name {
-  background: url("./assets/timer-item-name.svg") center no-repeat;
-  background-size: contain;
   height: 4em;
   width: 9em;
   justify-content: center;
   align-items: center;
-}
-
-.timer-item-name.full {
-  display: flex;
 }
 
 .section-1-main-content {
@@ -154,13 +277,14 @@ a {
   background: white;
   border-radius: 40px;
   height: 4em;
-  width: 25%;
+  min-width: 25%;
 }
 
 #email {
   border: none;
+  margin-left: 1em;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125em;
+  background: transparent;
 }
 
 #subscribe-submit {
@@ -172,12 +296,14 @@ a {
   background-color: #DF2224;
   border: none;
   border-radius: 50%;
+  margin-right: 0.5em;
 }
 
 input:focus
 {
   outline: none;
 }
+
 
 .popup {
   position: fixed;

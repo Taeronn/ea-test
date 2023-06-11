@@ -29,7 +29,7 @@ const Timer = () => {
             <div className="timer-item">
                 <h1 className="days">{timeLeft.days}</h1>
                 <div className="timer-item-name full">Days</div>
-                <div className="timer-item-name short hide">DD</div>
+                <div className="timer-item-name short">DD</div>
             </div>
             <div className="timer-separator">
                 <h1>:</h1>
@@ -37,7 +37,7 @@ const Timer = () => {
             <div className="timer-item">
                 <h1 className="days">{timeLeft.hours}</h1>
                 <div className="timer-item-name full">Hours</div>
-                <div className="timer-item-name short hide">HH</div>
+                <div className="timer-item-name short">HH</div>
             </div>
             <div className="timer-separator">
                 <h1>:</h1>
@@ -45,7 +45,7 @@ const Timer = () => {
             <div className="timer-item">
                 <h1 className="days">{timeLeft.minutes}</h1>
                 <div className="timer-item-name full">Minutes</div>
-                <div className="timer-item-name short hide">MM</div>
+                <div className="timer-item-name short">MM</div>
             </div>
             <div className="timer-separator">
                 <h1>:</h1>
@@ -53,7 +53,7 @@ const Timer = () => {
             <div className="timer-item">
                 <h1 className="days">{timeLeft.seconds}</h1>
                 <div className="timer-item-name full">Seconds</div>
-                <div className="timer-item-name short hide">SS</div>
+                <div className="timer-item-name short">SS</div>
             </div>
         </div>
     );
