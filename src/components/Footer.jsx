@@ -27,7 +27,7 @@ const Footer = ({setActive}) => {
     return (
         <div className="footer">
             <form id="subscribe">
-                <input type="email" name="email" id="email" placeholder="Enter your Email and get notified" size="33" required/>
+                <input type="email" name="email" id="email" placeholder="Enter your Email and get notified" size="29" required/>
                 <button type="submit" id="subscribe-submit">
                     <ArrowRight/>
                 </button>

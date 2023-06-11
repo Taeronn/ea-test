@@ -12,6 +12,11 @@
     font-size: 1.125em;
   }
 
+  #subscribe {
+    min-width: 25%;
+    justify-content: space-around;
+  }
+
   .timer-item-name.full {
     display: flex;
     background: url("./assets/timer-item-name.svg") center no-repeat;
@@ -52,7 +57,9 @@
     font-size: 0.875em;
   }
 
-
+  #subscribe {
+    max-width: 80%;
+  }
 
   .header-text h1 {
     font-size: 2.25em;
@@ -60,10 +67,6 @@
 
   .timer h1 {
     font-size: 2.25em;
-  }
-
-  .timer-item-name {
-
   }
 
   .vector-left {
@@ -99,10 +102,9 @@
     width: 19em;
   }
 
-
-
   #email {
     font-size: 0.875em;
+
   }
 
   .vector-left {
@@ -131,6 +133,10 @@
     line-height: 100%;
     width: 10em;
     margin-bottom: 0.5em;
+  }
+
+  #subscribe-submit {
+    margin-right: 30px;
   }
 }
 
@@ -271,13 +277,12 @@ a {
 
 #subscribe {
   display: flex;
+  flex-direction: row;
   -webkit-appearance: none;
-  justify-content: space-around;
   align-items: center;
   background: white;
   border-radius: 40px;
   height: 4em;
-  min-width: 25%;
 }
 
 #email {
@@ -289,6 +294,7 @@ a {
 
 #subscribe-submit {
   display: flex;
+  justify-self: end;
   cursor: pointer;
   justify-content: center;
   align-items: center;
