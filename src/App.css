@@ -34,6 +34,10 @@
     margin-top: 7em;
   }
 
+  .wrapper {
+    overflow-y: scroll;
+  }
+
   #subscribe {
     margin: 1.5em 0;
   }
@@ -121,6 +125,10 @@
 }
 
 @media screen and (max-width: 450px){
+  .logo {
+    margin-top: 14em;
+  }
+
   .vector-left {
     transform: scale(0.4) translateX(-360px) translateY(-360px);
   }
@@ -165,6 +173,7 @@ a {
 .section-1 {
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -173,6 +182,8 @@ a {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  overflow-x: hidden;
   position: relative;
 }
 
