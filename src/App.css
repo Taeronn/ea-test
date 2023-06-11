@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 body{
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
@@ -116,6 +117,7 @@ h1{
   display: flex;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
   justify-content: space-around;
   align-items: center;
   background-color: #1D4169;
@@ -175,4 +177,76 @@ a {
 input:focus
 {
   outline: none;
+}
+
+.popup {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  top:0;
+  background-color: rgba(22,44,78,0.6);
+}
+
+.popup.hide {
+  display: none;
+}
+
+.popup__content {
+
+  width: 18em;
+  background-color: white;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.popup__content h1 {
+  opacity: 1;
+  font-size: 2.25em;
+}
+
+.popup__content p {
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.cross {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  margin-bottom: 3em;
+}
+
+.cross button {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: transparent;
+  border: none;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn button{
+  display: flex;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  justify-content: center;
+  align-items: center;
+  background-color: #1D4169;
+  color: #ffffff;
+  height: 4em;
+  width: 12em;
+  border: none;
+  border-radius: 40px;
+  margin-bottom: 2.5em;
 }
